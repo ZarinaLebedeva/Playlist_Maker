@@ -3,7 +3,7 @@
     <string name="title_hello">Привет, Практикум</string>
     <string name="search_button">Поиск</string>
     <string name="library_button">Медиатека</string>
-    <string name="settings_button">Настройки</string>
+    <string name="settings">Настройки</string>
     <string name="dark_theme">Темная тема</string>
     <string name="share_app">Поделиться приложением</string>
     <string name="support_message">Написать в поддержку</string>
