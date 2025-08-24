@@ -1,19 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    android:background="@color/blue"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/size_16">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_gravity="start"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_22"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/size_12"
+        android:layout_marginTop="@dimen/size_8"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/search_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/size_16"
+            android:layout_marginStart="@dimen/size_16"
+            android:layout_marginEnd="@dimen/size_16"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/white"
+            android:text="@string/search_button"
+            android:textSize="@dimen/text_22"
+            android:textColor="@color/black"
+            app:icon="@drawable/search"
+            app:iconGravity="textStart"
+            app:iconPadding="@dimen/size_8"
+            app:iconTint="@color/black"
+            app:cornerRadius="@dimen/size_16"/>
+
+        <Button
+            android:id="@+id/library_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/size_16"
+            android:layout_marginEnd="@dimen/size_16"
+            android:layout_marginTop="@dimen/size_16"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/white"
+            android:text="@string/library_button"
+            android:textSize="@dimen/text_22"
+            android:textColor="@color/black"
+            app:icon="@drawable/library"
+            app:iconGravity="textStart"
+            app:iconPadding="@dimen/size_8"
+            app:iconTint="@color/black"
+            app:cornerRadius="@dimen/size_16"/>
+
+        <Button
+            android:id="@+id/settings_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/size_16"
+            android:layout_marginEnd="@dimen/size_16"
+            android:layout_marginTop="@dimen/size_16"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/white"
+            android:text="@string/settings"
+            android:textSize="@dimen/text_22"
+            android:textColor="@color/black"
+            android:layout_marginBottom="@dimen/size_16"
+            app:icon="@drawable/settings"
+            app:iconGravity="textStart"
+            app:iconPadding="@dimen/size_8"
+            app:iconTint="@color/black"
+            app:cornerRadius="@dimen/size_16"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
